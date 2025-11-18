@@ -430,7 +430,7 @@
     }
 
 
-    #callback-modal {
+    .callback-modal {
         width: 60vw;
     }
     .modal-header {
@@ -782,7 +782,7 @@
     }
 
 
-    #callback-modal {
+    .callback-modal {
         width: 70vw;
     }
     .modal-header {
@@ -1175,8 +1175,8 @@
     }
 
 
-    #callback-modal {
-        width: 80vw;
+    .callback-modal {
+        width: 90vw;
     }
     .modal-header {
         padding: 12px 20px;
@@ -1521,7 +1521,7 @@
     }
 
 
-    #callback-modal {
+    .callback-modal {
         width: 90vw;
     }
     .modal-header {

@@ -922,8 +922,7 @@ footer {
 }
 
 /* ===== MODAL WINDOW CALLBACK ===== */
-#callback-modal {
-  width: 40vw;
+.callback-modal {
   max-width: 90vw;
   max-height: 90vh;
   border: none;
@@ -936,7 +935,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#callback-modal::backdrop {
+.callback-modal::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -944,6 +943,7 @@ footer {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  z-index: 9999;
 }
 .modal-header {
   background-color: #E05100;
@@ -984,6 +984,7 @@ footer {
 }
 
 .feedback-form {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1040,8 +1041,11 @@ footer {
   cursor: not-allowed;
 }
 .g-recaptcha {
-  max-width: 100%;
+  z-index: 10000;
   margin: 10px 0;
-  transform: scale(0.95);
+  transform: scale(0.85);
   transform-origin: 0 0;
+}
+.g-recaptcha iframe {
+  z-index: 10001 !important;
 }

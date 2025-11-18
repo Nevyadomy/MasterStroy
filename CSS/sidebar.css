@@ -132,8 +132,8 @@ body:has(.sidebar[open]) {
 
 
 @media (max-width: 575px) {
-  #callback-modal {
-    width: 70vw;
+  .sidebar {
+    width: 70vw !important;
   }
   .sidebar__header img {
     height: 40px;
