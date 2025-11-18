@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/adaptability.css">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
     <style>
     html {
         scroll-behavior: smooth;
@@ -869,13 +869,11 @@
                     <label for="email" class="feedback-form-label">Увядзіце адрас электроннай пошты:</label>
                     <input type="email" id="email" name="email" class="feedback-form-input" placeholder="youraddress@gmail.com" autocomplete="email" pattern="const regex = /^(?!.*(?:test|example|fake|temp|admin|user|qwerty|asdfgh|123456|abcdef))[a-z0-9](?:[a-z0-9._%+-]*[a-z0-9])?@(?:gmail|yahoo|yandex|mail|rambler|list|bk|inbox|hotmail|outlook|live|aol|protonmail|zoho)\.[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$/i;" required aria-invalid="false">
                 </div>
-                    
-                <!-- reCAPTCHA (когда будет ключ) -->
-                <!-- 
+                
                 <div class="form-group">
-                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+                    <div class="g-recaptcha" data-sitekey="6LeoexAsAAAAAOC3apMbHcSF-B11nbaeJ51cehES"></div>
                 </div>
-                -->
+               
 
                 <button type="submit" class="feedback-form-submit" id="submit-button" aria-label="Адправіць форму" title="Адправіць">Адправіць паведамленне</button>
             </form>
