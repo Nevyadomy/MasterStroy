@@ -1,0 +1,108 @@
+@import '_variables';
+
+/* ===== DELIVERY STYLES ===== */
+
+.delivery {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        &--info {
+            flex: 0 0 50%;
+            background-color: $color-primary;
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        &--image {
+            flex: 0 0 50%;
+        }
+
+        &--truck {
+            flex: 0 0 50%;
+        }
+
+        &--factory {
+            flex: 0 0 50%;
+            background-color: $color-fone;
+            padding: 80px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        &--map {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        color: $color-light;
+        max-width: 600px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        color: $color-light;
+        max-width: 600px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        margin-bottom: $spacing-md;
+    }
+
+    &__text {
+        color: $color-light;
+        max-width: 500px;
+        text-align: center;
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+    }
+
+    &__address {
+        color: $color-light;
+        max-width: 400px;
+        text-align: center;
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        margin-bottom: 8px;
+
+        &--darken {
+            color: #9d9d9d;
+        }
+    }
+
+    &__hours {
+        color: $color-light;
+        max-width: 300px;
+        text-align: center;
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        margin-bottom: 8px;
+    }
+
+    &__phone {
+        display: flex;
+        gap: $spacing-sm;
+        color: $color-light;
+        max-width: 300px;
+        text-align: center;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+    }
+}

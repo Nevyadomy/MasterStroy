@@ -1,0 +1,43 @@
+$color-primary: #E05100;
+$color-fone: #404040;
+$color-light: #ffffff;
+$color-dark: #000000;
+
+$font-main: 'Montserrat', sans-serif;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$font-size-xs: 11px;
+$font-size-sm: 12px;
+$font-size-base: 14px;
+$font-size-md: 16px;
+$font-size-lg: 36px;
+$font-size-xl: 40px;
+
+$spacing-xs: 2px;
+$spacing-sm: 5px;
+$spacing-md: 10px;
+$spacing-lg: 15px;
+$spacing-xl: 20px;
+$spacing-xxl: 25px;
+$spacing-xxxl: 30px;
+
+$height-header-top: 30px;
+$height-select: 16px;
+$height-button: auto;
+
+$container-padding: 17.5%;
+$container-max-width: 1050px;
+
+$icon-size-small: 14px;
+$icon-size-medium: 30px;
+
+$card-image-width: 176px;
+$card-image-height: 114px;
+$card-border-radius: 15px;
+
+$shadow-default: 4px 4px 10px rgba(0, 0, 0, 0.1);
+$shadow-hover: 4px 4px 15px $color-primary;
+
+$transition: all 0.3s ease;

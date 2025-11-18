@@ -1,0 +1,143 @@
+@import 'variables';
+
+/* ===== TOP-PRODUCTS STYLES ===== */
+
+.top-products {
+  padding: 120px 0;
+  background: $color-light;
+
+  &__title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: $color-dark;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__layout {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: $spacing-xl;
+    justify-content: space-between;
+  }
+
+  &__card {
+    display: flex;
+    background: $color-light;
+    border-radius: 30px;
+    box-shadow: $shadow-default;
+    overflow: hidden;
+  }
+
+  &__card-info {
+    padding: $spacing-xl 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-image {
+    width: 282px;
+    height: 172px;
+    object-fit: cover;
+    margin-bottom: 26px;
+    display: block;
+  }
+
+  &__card-specs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-name {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    color: $color-dark;
+    margin-bottom: 12px;
+  }
+
+  &__card-spec-label {
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    color: $color-dark;
+    margin-bottom: 5px;
+    display: block;
+
+    &:last-of-type {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__card-colors {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__card-color {
+    width: 16px;
+    height: 16px;
+    background: #ccc;
+    transition: outline $transition;
+
+    &:hover {
+      cursor: pointer;
+      outline: 1px solid $color-dark;
+    }
+
+    &:nth-child(1) { background: #737373; }
+    &:nth-child(2) { background: #9C0909; }
+    &:nth-child(3) { background: #D48D37; }
+    &:nth-child(4) { background: #964B00; }
+    &:nth-child(5) { background: #DC143C; }
+    &:nth-child(6) { background: #49423D; }
+    &:nth-child(7) { background: #FFECDB; }
+    &:nth-child(8) { background: $color-dark; }
+  }
+
+  &__card-prices {
+    background: $color-fone;
+    padding: $spacing-xl 28px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__card-price-item {
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  &__card-bold-label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    color: $color-light;
+  }
+
+  &__card-label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-regular;
+    color: $color-light;
+  }
+
+  &__card-button {
+    background: $color-primary;
+    border: none;
+    border-radius: 30px 0 30px 0;
+    padding: 18px 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $transition;
+
+    &:hover {
+      background: #c44900;
+    }
+  }
+}

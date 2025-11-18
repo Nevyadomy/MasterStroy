@@ -1,0 +1,58 @@
+/* ===== HERO STYLES ===== */
+.hero {
+  background-image: url("../Images/hero-background.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__title {
+  max-width: 640px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+.hero__subtitle {
+  max-width: 750px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  margin: 26px 0;
+}
+.hero__button {
+  text-decoration: none;
+}
+.hero__button .button {
+  background: #E05100;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 85px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  user-select: none;
+  position: relative;
+}
+.hero__button .button:hover {
+  background: transparent;
+  outline: 3px solid #E05100;
+  color: #ffffff;
+}
+.hero__button .button:focus {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}

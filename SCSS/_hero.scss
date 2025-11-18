@@ -1,0 +1,68 @@
+@import 'variables';
+
+/* ===== HERO STYLES ===== */
+
+.hero {
+  background-image: url("../Images/hero-background.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 640px;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    color: $color-light;
+    text-align: center;
+  }
+
+  &__subtitle {
+    max-width: 750px;
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    text-align: center;
+    color: $color-light;
+    margin: 26px 0;
+  }
+
+  &__button {
+    text-decoration: none;
+
+    .button {
+      background: $color-primary;
+      color: $color-light;
+      border: none;
+      border-radius: 30px;
+      padding: $spacing-xl 85px;
+      font-size: $font-size-md;
+      font-weight: $font-weight-bold;
+      cursor: pointer;
+      transition: $transition;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      box-sizing: border-box;
+      user-select: none;
+      position: relative;
+
+      &:hover {
+        background: transparent;
+        outline: 3px solid $color-primary;
+        color: $color-light;
+      }
+
+      &:focus {
+        outline: 3px solid $color-light;
+        outline-offset: $spacing-xs;
+      }
+    }
+  }
+}

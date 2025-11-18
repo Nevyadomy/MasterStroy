@@ -1,0 +1,59 @@
+@import '_variables';
+
+/* ===== PRODUCTION STYLES ===== */
+
+.production {
+    padding: 120px 0;
+    background-color: $color-fone;
+
+    &__title {
+        text-align: center;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-bold;
+        margin-bottom: 90px;
+        color: $color-light;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__description-block {
+        &:nth-child(1) {
+            background-color: $color-light;
+            border-radius: 30px;
+            padding: 0 40px;
+            width: fit-content;
+        }
+
+        &:nth-child(n+2) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__description-image {
+        display: block;
+        width: 155px;
+        height: 75px;
+    }
+
+    &__description-block-text {
+        margin: 0 30px;
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        color: $color-light;
+    }
+
+    &__video video {
+        width: 700px;
+        height: auto;
+        display: block;
+    }
+}

@@ -1,0 +1,71 @@
+/* ===== ABOUT STYLES ===== */
+.about__container {
+  display: flex;
+  background: #404040;
+}
+.about__image {
+  width: 748px;
+  height: 748px;
+}
+.about__content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+}
+.about__text-content {
+  color: #ffffff;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.about__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+.about__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.about__paragraphs {
+  margin-bottom: 80px;
+}
+.about__paragraph {
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.about__paragraph.about__company {
+  font-weight: 700;
+  margin-bottom: 42px;
+}
+.about__button {
+  background: #E05100;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 66px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  align-self: flex-start;
+  appearance: none;
+}
+.about__button:hover, .about__button:focus {
+  background: transparent;
+  outline: 2px solid #E05100;
+  color: #E05100;
+}
+.about__button:focus {
+  outline-offset: 2px;
+}

@@ -1,0 +1,42 @@
+/* ===== SCROLL TO TOP BUTTON ===== */
+.go-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #E05100;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(224, 81, 0, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.go-up.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.go-up:hover {
+  background: #c44900;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(224, 81, 0, 0.4);
+}
+.go-up:hover .go-up__icon {
+  transform: translateY(-2px);
+}
+.go-up:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(224, 81, 0, 0.3);
+}
+.go-up__icon {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}

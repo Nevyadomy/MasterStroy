@@ -1,0 +1,147 @@
+@import '_variables';
+
+/* ===== MODAL WINDOW CALLBACK ===== */
+
+#callback-modal {
+  width: 40vw;
+  max-width: 90vw;
+  max-height: 90vh;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  background: $color-light;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &-header {
+    background-color: $color-primary;
+    color: $color-light;
+    padding: $spacing-xl $spacing-xxxl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    margin: 0;
+  }
+
+  &-close {
+    background: none;
+    border: none;
+    outline: none;
+    color: $color-light;
+    font-size: 24px;
+    cursor: pointer;
+    width: $spacing-xxxl;
+    height: $spacing-xxxl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color $transition;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &-body {
+    padding: $spacing-xxxl;
+    flex: 1;
+    overflow-y: auto;
+  }
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+
+  &-group {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  &-label {
+    font-weight: 500;
+    color: #333;
+    font-size: $font-size-md;
+  }
+
+  &-input,
+  &-textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: $font-size-md;
+    transition: border-color $transition, box-shadow $transition;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 2px rgba(224, 81, 0, 0.2);
+    }
+  }
+
+  &-textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+
+  &-hint {
+    font-size: $font-size-base;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  &-error:not([hidden]) {
+    display: block;
+  }
+
+  &-submit {
+    background-color: $color-primary;
+    color: $color-light;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: $font-main;
+    font-size: $font-size-md;
+    font-weight: 500;
+    transition: background-color $transition;
+    margin-top: $spacing-md;
+
+    &:hover {
+      background-color: #c44900;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.g-recaptcha {
+  margin: 15px 0;
+  transform: scale(0.95);
+  transform-origin: 0 0;
+}
