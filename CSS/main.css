@@ -923,8 +923,8 @@ footer {
 
 /* ===== MODAL WINDOW CALLBACK ===== */
 .callback-modal {
-  max-width: 90vw;
-  height: 90vh;
+  width: 50vw;
+  max-height: 95vh;
   border: none;
   border-radius: 10px;
   padding: 0;
@@ -1030,7 +1030,6 @@ footer {
   font-size: 16px;
   font-weight: 500;
   transition: background-color all 0.3s ease;
-  margin-top: 10px;
 }
 .feedback-form-submit:hover {
   background-color: #c44900;
@@ -1039,10 +1038,12 @@ footer {
   background-color: #ccc;
   cursor: not-allowed;
 }
+.form-group {
+  max-height: 70px;
+}
 .g-recaptcha {
   z-index: 10000;
-  margin: 10px 0;
-  transform: scale(0.85);
+  transform: scale(0.80);
   transform-origin: 0 0;
 }
 .g-recaptcha iframe {

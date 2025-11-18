@@ -1551,4 +1551,7 @@
         padding: 10px 16px;
         font-size: 12px;
     }
+    .g-recaptcha {
+        transform: scale(0.70);
+    }
 }
