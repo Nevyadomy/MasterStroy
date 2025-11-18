@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MasterStroy</title>
-    <link rel="alternate" hreflang="ru" href="MasterStroy.html">
+    <link rel="alternate" hreflang="ru" href="index.html">
     <link rel="alternate" hreflang="be" href="MasterStroy_BY.html">
     <link rel="alternate" hreflang="en" href="MasterStroy_EN.html">
     <link rel="alternate" hreflang="pl" href="MasterStroy_PL.html">
@@ -98,11 +98,11 @@
                 <span></span>
             </button>
             
-            <a href="MasterStroy.html" class="header__top--mobile" title="Обновить страницу"><img src="Images/MasterStroy-Logo.svg" alt="Мастер Строй"></a>
+            <a href="index.html" class="header__top--mobile" title="Обновить страницу"><img src="Images/MasterStroy-Logo.svg" alt="Мастер Строй"></a>
 
             <div class="header__techbar">
                 <select class="language__select" title="Выбрать язык" name="language_select" aria-label="Выбрать язык" onchange="window.location.href=this.options[this.selectedIndex].value">
-                    <option value="MasterStroy.html" title="Русский" selected>RU</option>
+                    <option value="index.html" title="Русский" selected>RU</option>
                     <option value="MasterStroy_BY.html" title="Белорусский">BY</option>
                     <option value="MasterStroy_EN.html" title="Английский">EN</option>
                     <option value="MasterStroy_PL.html" title="Польский">PL</option>
@@ -115,7 +115,7 @@
 
     <div class="header__bottom">
         <div class="container header__container">
-            <a href="MasterStroy.html" title="Обновить страницу"><img class="header__logo" src="Images/MasterStroy-Logo.svg" alt="Мастер Строй"></a>
+            <a href="index.html" title="Обновить страницу"><img class="header__logo" src="Images/MasterStroy-Logo.svg" alt="Мастер Строй"></a>
 
             <nav class="header__nav">
                 <ul class="nav__list">
@@ -909,7 +909,7 @@ document.addEventListener('DOMContentLoaded', () => {
         email.setAttribute('aria-invalid', !isValid);
         email.style.borderColor = isValid ? '' : '#f44336';
         if (!isValid && value !== '') {
-            email.title = 'Пожалуйста, используйте личный email адрес (Gmail, Mail.ru, Yandex и т.д.)';
+            email.title = 'Пожалуйста, используйте адрес: Gmail, Mail.ru, Yandex и т.д.';
         } else {
             email.title = '';
         }
