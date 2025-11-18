@@ -895,9 +895,23 @@ if (btn) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const dialog = document.getElementById('callback-modal');
-
-    dialog.addEventListener('close', function() {
-        document.querySelector('.feedback-form').reset();
+    const form = document.querySelector('.feedback-form');
+    dialog.addEventListener('click', function(e) {
+        if (e.target === dialog) dialog.close();
+    });
+    form.addEventListener('input', function() {
+        const data = Object.fromEntries(new FormData(form));
+        localStorage.setItem('formBackup', JSON.stringify(data));
+    });
+    dialog.addEventListener('open', function() {
+        const saved = localStorage.getItem('formBackup');
+        if (saved) {
+            const data = JSON.parse(saved);
+            Object.keys(data).forEach(key => {
+                const field = form.querySelector(`[name="${key}"]`);
+                if (field) field.value = data[key];
+            });
+        }
     });
 });
 

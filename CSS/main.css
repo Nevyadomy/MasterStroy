@@ -1039,9 +1039,9 @@ footer {
   background-color: #ccc;
   cursor: not-allowed;
 }
-
 .g-recaptcha {
-  margin: 15px 0;
+  max-width: 100%;
+  margin: 10px 0;
   transform: scale(0.95);
   transform-origin: 0 0;
 }
