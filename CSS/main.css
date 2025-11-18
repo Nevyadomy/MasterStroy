@@ -924,7 +924,7 @@ footer {
 /* ===== MODAL WINDOW CALLBACK ===== */
 .callback-modal {
   max-width: 90vw;
-  max-height: 90vh;
+  height: 90vh;
   border: none;
   border-radius: 10px;
   padding: 0;
