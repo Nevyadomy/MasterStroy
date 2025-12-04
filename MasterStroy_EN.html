@@ -847,7 +847,7 @@
 
 <button type="button" class="go-up" aria-label="Return to top of page" title="Go to top"><svg class="go-up__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
 
-<dialog class="callback-modal" id="callback-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+<dialog class="callback-modal" id="callback-modal" aria-labelledby="modal-title" aria-modal="true">
     <div class="modal">
         <div class="modal-header">
             <h2 class="modal-title" id="modal-title">Feedback form</h2>
@@ -860,7 +860,7 @@
             <form class="feedback-form" id="feedback-form" action="https://formspree.io/f/xjkjgenw" method="POST">
                 <div class="feedback-form-group">
                     <label for="name" class="feedback-form-label">Enter your name:</label>
-                    <input type="text" id="name" name="name" class="feedback-form-input" placeholder="James Smith" autocomplete="name" required minlength="2"maxlength="50" aria-invalid="false" aria-describedby="name-hint">
+                    <input type="text" id="name" name="name" class="feedback-form-input" placeholder="James Smith" autocomplete="name" required minlength="2" maxlength="50" aria-invalid="false" aria-describedby="name-hint">
                     <span id="name-hint" class="feedback-form-hint">Minimum 2 symbols, maximum 50 symbols</span>
                 </div>
                     
