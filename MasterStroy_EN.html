@@ -872,7 +872,7 @@
 
                 <div class="feedback-form-group" id="email-group">
                     <label for="email" class="feedback-form-label">Enter your email address:</label>
-                    <input type="email" id="email" name="email" class="feedback-form-input" placeholder="youraddress@gmail.com" autocomplete="email" pattern="const regex = /^(?!.*(?:test|example|fake|temp|admin|user|qwerty|asdfgh|123456|abcdef))[a-z0-9](?:[a-z0-9._%+-]*[a-z0-9])?@(?:gmail|yahoo|yandex|mail|rambler|list|bk|inbox|hotmail|outlook|live|aol|protonmail|zoho)\.[a-z0-9](?:[a-z0-9.-]*[a-z0-9])?$/i;" required aria-invalid="false">
+                    <input type="email" id="email" name="email" class="feedback-form-input" placeholder="youraddress@gmail.com" autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-invalid="false">
                 </div>
                 
                 <div class="form-group">
