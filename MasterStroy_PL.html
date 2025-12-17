@@ -636,7 +636,7 @@
             </div>
 
             <div class="production__video">
-                <video controls>
+                <video controls muted>
                     <source src="Videos/MasterStroy.mp4" type="video/mp4">
                     <source src="Videos/MasterStroy.webm" type="video/webm">
                     Twoja przeglądarka nie obsługuje wideo
@@ -871,7 +871,7 @@
 
                 <div class="feedback-form-group" id="email-group">
                     <label for="email" class="feedback-form-label">Podaj swój adres e-mail:</label>
-                    <input type="email" id="email" name="email" class="feedback-form-input" placeholder="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-invalid="false">
+                    <input type="email" id="email" name="email" class="feedback-form-input" placeholder="youraddress@gmail.com" autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-invalid="false">
                 </div>
                 
                 <div class="form-group">
