@@ -17,7 +17,7 @@
     color: #E05100;
 }
 
-.hero__button .button:hover {
+.hero__button:hover {
     background: transparent;
     outline: 3px solid #E05100;
     color: #fff;
@@ -92,7 +92,7 @@
     color: #E05100;
 }
 
-.hero__button .button:active {
+.hero__button:active {
     background: #b94400;
     outline: none;
 }
@@ -198,7 +198,7 @@
         font-size: 12px;
         margin: 25px 0;
     }
-    .hero__button .button {
+    .hero__button {
         padding: 15px 65px;
         font-size: 14px;
     }
@@ -530,7 +530,7 @@
         font-size: 11px;
         margin: 25px 0;
     }
-    .hero__button .button {
+    .hero__button {
         padding: 10px 50px;
         font-size: 12px;
     }
@@ -871,7 +871,7 @@
         font-size: 11px;
         margin: 25px 0;
     }
-    .hero__button .button {
+    .hero__button {
         padding: 10px 50px;
         font-size: 12px;
     }
@@ -1258,12 +1258,12 @@
         font-size: 11px;
         margin: 25px 0;
     }
-    .hero__button .button {
+    .hero__button {
         border-radius: 16px;
         padding: 10px 40px;
         font-size: 12px;
     }
-    .hero__button .button:hover {
+    .hero__button:hover {
         outline: none;
         background-color: #c44900;
     }

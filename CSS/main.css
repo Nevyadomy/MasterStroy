@@ -205,8 +205,6 @@
 }
 .hero__button {
   text-decoration: none;
-}
-.hero__button .button {
   background: #E05100;
   color: #ffffff;
   border: none;
@@ -223,12 +221,12 @@
   user-select: none;
   position: relative;
 }
-.hero__button .button:hover {
+.hero__button:hover {
   background: transparent;
   outline: 3px solid #E05100;
   color: #ffffff;
 }
-.hero__button .button:focus {
+.hero__button:focus {
   outline: 3px solid #ffffff;
   outline-offset: 2px;
 }
@@ -597,6 +595,10 @@
 }
 .delivery__card--map {
   flex: 0 0 100%;
+}
+.map-frame {
+  width: 100%;
+  border: 0;
 }
 .delivery__img {
   height: 100%;
